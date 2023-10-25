@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Sign-In/Sign-Out</title>
+  <style>
+    body {
+    background-image: url('ict.jpg');
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-repeat:no-repeat;
+   background-size: cover;
+
+  
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input{
+  width: 375px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ICT Staff Sign-In/Sign-Out</h1>
+    <form id="attendanceForm">
+      <label for="employeeId">User ID:</label>
+      <input type="text" id="employeeId" name="employeeId" required>
+
+      <label for="action">Action:</label>
+      <select id="action" name="action" required>
+        <option value="sign-in">Sign In</option>
+        <option value="sign-out">Sign Out</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
